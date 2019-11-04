@@ -25,7 +25,8 @@ EmployeeName VARCHAR(50),
 PhoneNo VARCHAR(50),
 [Address] VARCHAR(50),
 Email VARCHAR(50),
-Salary INT
+Salary INT,
+CurrentLocation VARCHAR(50) 
 )
 
 CREATE TABLE Users_Employees
@@ -69,3 +70,70 @@ Username VARCHAR(50) PRIMARY KEY,
 [Password] VARCHAR(50) UNIQUE NOT NULL,
 EmployeeId INT FOREIGN KEY REFERENCES dbo.Employee(EmployeeId)
 )
+
+CREATE TABLE Location
+(
+LocationLongitude INT,
+LocationLatitude INT,
+LocationName VARCHAR(50)
+)
+
+Insert into Location values
+(200,200,'Bellandur')
+
+Insert into Location values
+(240,275,'Electronic City')
+
+Insert into Location values
+(150,230,'WhiteField')
+
+Insert into Location values
+(275,210,'JP Nagar')
+
+Insert into Location values
+(240,50,'Hebbal')
+
+Insert into Location values
+(210,130,'Indira Nagar')
+
+Insert into Location values
+(235,140,'Tin Factory')
+
+Insert into Location values
+(180,150,'Kormangala')
+
+Insert into Location values
+(280,100,'Chikpet')
+
+Insert into Location values
+(210,220,'HSR Layout')
+
+Insert into Location values
+(200,270,'Sarjapura')
+
+Insert into Location values
+(50,50,'Yashwanthpur')
+
+Insert into Location values
+(240,120,'LalBagh')
+
+Insert into Location values
+(300,230,'Banashankari')
+
+Insert into Location values
+(220,210,'Marathalli')
+
+Insert into Location values
+(230,210,'SilkBoard')
+
+Insert into Location values
+(230,210,'BTM Layout')
+
+Insert into Location values
+(240,245,'Bommanahalli')
+
+Insert into Location values
+(230,75,'Nagwara')
+
+Insert into Location values
+(300,10,'Airport')
