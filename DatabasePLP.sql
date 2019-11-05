@@ -77,7 +77,7 @@ CREATE TABLE Location
 (
 LocationLongitude INT,
 LocationLatitude INT,
-LocationName VARCHAR(50)
+LocationName VARCHAR(50) PRIMARY KEY
 )
 
 Insert into Location values
