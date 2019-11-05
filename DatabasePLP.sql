@@ -62,7 +62,9 @@ TaxiNo VARCHAR(50) FOREIGN KEY REFERENCES dbo.Taxi(TaxiNo),
 TimeOfBooking DATETIME,
 PickUpLocaton VARCHAR(50),
 DropLocaton VARCHAR(50),
-Fare INT
+Fare INT,
+Rating INT,
+Feedback VARCHAR(50)
 )
 CREATE TABLE Users_Admin
 (
